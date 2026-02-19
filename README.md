@@ -1,36 +1,212 @@
-## 🏢 Projeto: CondoManager - Gestao de Condominio no ServiceNow
+## 🏢 CondoManager - Aplicação de Gestao de Condominio no ServiceNow
 
-Objetivo
-Desenvolver uma aplicação escopada no ServiceNow para gestão de: 
-- moradores, 
-- apartamentos, 
-- chamados de manutenção, 
-- reservas de áreas comuns, 
-- controle de acesso por perfil
+## 🎯 Objetivo do Projeto
+Desenvolver uma aplicação escopada no ServiceNow para gestão de condomínio, permitindo: 
+- Cadastro de moradores, 
+- Controle de apartamentos, 
+- Abertura e acompanhamento de chamados de manutenção, 
+- Reservas de áreas comuns, 
+- Controle de acesso em perfis (RBAC)
+- Automação de notificações e processo
 
-Projeto de Gestão de Condomínio no ServiceNow é excelente para portfólio porque mostra:
-- Modelagem de dados
-- Segurança (RBAC 👀)
-- Processos (workflow)
-- Automação
-- Portal para usuários
+## 📌 Cenário Fictício
 
-Isso tem cara de projeto real corporativo.
+O Condomínio Residencial **Solar das Palmeiras** precisa de uma solução para:
 
-## 🧱 FASE 1 – Planejamento Funcional (ANTES DE CODAR)
-
-📌 Cenário Fictício
-
-Condomínio Residencial Vila Constança precisa:
 - Registrar moradores e apartamentos
-- Permitir abertura de chamados (ex: vazamento, elevador quebrado)
+- Permitir abertura de chamados (ex: vazamento, elevador com defeito)
 - Permitir reserva de salão de festas
-- Permitir síndico acompanhar e fechar chamados
-- Restringir acesso por perfil
+- Permitir que o síndico acompanhe e finalize solicitações
+- Controlar acessos conforme perfil do usuário
 
-Perfis:
-- Morador
-- Porteiro
-- Síndico
-- Administrador do sistema
+---
 
+## 🏗️ FASE 1 – [Criação da Aplicação](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)
+
+## 1️⃣ Criar Aplicação Escopada
+
+- Acessar: App Engine Studio
+- Criar nova aplicação
+- Nome: `CondoManager`
+- Escopo: `x_seuusuario_condomanager`
+
+---
+
+# 🗄️ FASE 2 – Modelagem de Dados
+
+## 2️⃣ Criar Tabelas
+
+---
+
+## 🏠 Tabela: Apartment
+
+Campos:
+
+- Number (String)
+- Block (String)
+- Owner (Reference → User)
+- Status (Choice: Occupied / Vacant)
+
+---
+
+## 👤 Tabela: Resident
+
+Campos:
+
+- Name (String)
+- Apartment (Reference → Apartment)
+- Phone (String)
+- Email (Email)
+- Type (Choice: Owner / Tenant)
+
+---
+
+## 🛠️ Tabela: Maintenance Request
+
+> Estender a tabela **Task** para reaproveitar funcionalidades padrão.
+
+Campos adicionais:
+
+- Apartment (Reference → Apartment)
+- Category (Choice: Hidráulica / Elétrica / Estrutural)
+- Priority
+- Status (Open / In Progress / Resolved / Closed)
+
+---
+
+## 🎉 Tabela: Reservation
+
+Campos:
+
+- Area (Choice: Salão de Festas / Churrasqueira / Quadra)
+- Apartment (Reference → Apartment)
+- Date (Date/Time)
+- Status (Requested / Approved / Rejected)
+
+---
+
+# 🔐 FASE 3 – Segurança (RBAC)
+
+## 3️⃣ Criar Roles
+
+- condo_resident
+- condo_doorman
+- condo_manager
+- condo_admin
+
+---
+
+## 4️⃣ Configurar ACLs
+
+### Maintenance Request
+
+- Morador:
+  - Pode criar
+  - Pode visualizar apenas chamados do seu apartamento
+
+- Síndico:
+  - Pode visualizar todos
+  - Pode alterar status
+  - Pode fechar chamados
+
+- Porteiro:
+  - Pode visualizar
+  - Não pode fechar chamados
+
+---
+
+# 🔄 FASE 4 – Automação (Flow Designer)
+
+## 5️⃣ Criar Fluxos
+
+### Fluxo 1 – Novo Chamado
+
+Trigger:
+- Quando Maintenance Request for criado
+
+Ações:
+- Enviar notificação para o síndico
+
+---
+
+### Fluxo 2 – Chamado Resolvido
+
+Trigger:
+- Quando Status mudar para "Resolved"
+
+Ações:
+- Notificar morador
+
+---
+
+### Fluxo 3 – Solicitação de Reserva
+
+Trigger:
+- Quando Reservation for criada
+
+Ações:
+- Enviar solicitação de aprovação para síndico
+
+---
+
+# 🧩 FASE 5 – UI Policies
+
+Exemplos:
+
+- Se Category = Hidráulica → Mostrar campo "Urgency"
+- Se Status = Resolved → Tornar campo "Resolution Notes" obrigatório
+- Se Status = Closed → Tornar formulário somente leitura
+
+---
+
+# 🌐 FASE 6 – Portal para Moradores
+
+Implementar:
+
+- Record Producer para abertura de chamados
+- Record Producer para reserva de áreas comuns
+- Página personalizada no Employee Center ou Service Portal
+
+Objetivo:
+Melhorar a experiência do usuário final.
+
+---
+
+# 📊 FASE 7 – Dashboard
+
+Criar Dashboard com:
+
+- Total de chamados abertos
+- Chamados por categoria
+- Chamados por status
+- Reservas por mês
+
+---
+
+# 🧠 Conceitos Aplicados
+
+- Aplicação escopada
+- Modelagem relacional
+- Extensão da tabela Task
+- RBAC (Role-Based Access Control)
+- ACL (Access Control List)
+- Flow Designer
+- UI Policies
+- Experiência do Usuário
+- Governança e Segurança
+
+---
+
+# 🚀 Resultado Esperado
+
+Uma aplicação funcional que simula um cenário real corporativo, demonstrando:
+
+✔ Organização de dados  
+✔ Controle de acesso  
+✔ Automação de processos  
+✔ Experiência do usuário  
+✔ Boas práticas de desenvolvimento no ServiceNow  
+
+---
+
+✨ Desenvolvido por Adriana G.
