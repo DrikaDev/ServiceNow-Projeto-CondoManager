@@ -1,4 +1,4 @@
-## 🏗️ FASE 1 – Criação da Aplicação Escopada
+## 🏗️ Fase 1 – Criação da Aplicação Escopada
 
 - Acessar: App Engine Studio
 - Criar nova aplicação
