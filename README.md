@@ -21,71 +21,11 @@ O Condomínio Residencial **Solar das Palmeiras** precisa de uma solução para:
 
 ---
 
-## 🏗️ FASE 1 – [Criação da Aplicação](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)
+### 🏗️ FASE 1 – [Criação da Aplicação Escopada](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)
 
-## 1️⃣ Criar Aplicação Escopada
+### 🗄️ FASE 2 – Modelagem de Dados
 
-- Acessar: App Engine Studio
-- Criar nova aplicação
-- Nome: `CondoManager`
-- Escopo: `x_seuusuario_condomanager`
-
----
-
-# 🗄️ FASE 2 – Modelagem de Dados
-
-## 2️⃣ Criar Tabelas
-
----
-
-## 🏠 Tabela: Apartment
-
-Campos:
-
-- Number (String)
-- Block (String)
-- Owner (Reference → User)
-- Status (Choice: Occupied / Vacant)
-
----
-
-## 👤 Tabela: Resident
-
-Campos:
-
-- Name (String)
-- Apartment (Reference → Apartment)
-- Phone (String)
-- Email (Email)
-- Type (Choice: Owner / Tenant)
-
----
-
-## 🛠️ Tabela: Maintenance Request
-
-> Estender a tabela **Task** para reaproveitar funcionalidades padrão.
-
-Campos adicionais:
-
-- Apartment (Reference → Apartment)
-- Category (Choice: Hidráulica / Elétrica / Estrutural)
-- Priority
-- Status (Open / In Progress / Resolved / Closed)
-
----
-
-## 🎉 Tabela: Reservation
-
-Campos:
-
-- Area (Choice: Salão de Festas / Churrasqueira / Quadra)
-- Apartment (Reference → Apartment)
-- Date (Date/Time)
-- Status (Requested / Approved / Rejected)
-
----
-
-# 🔐 FASE 3 – Segurança (RBAC)
+### 🔐 FASE 3 – Segurança (RBAC)
 
 ## 3️⃣ Criar Roles
 
