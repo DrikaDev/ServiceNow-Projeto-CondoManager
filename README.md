@@ -27,7 +27,7 @@ O Condomínio Residencial **Solar das Palmeiras** precisa de uma solução para:
 
 ### 🏗️ FASE 1 – [Criação da Aplicação Escopada](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)
 
-### 🗄️ FASE 2 – Modelagem de Dados
+### 🗄️ FASE 2 – [Modelagem de Dados](https://github.com/DrikaDev/ServiceNow-Projeto-CondoManager/blob/main/Fase%202.md)
 
 ### 🔐 FASE 3 – Segurança (RBAC)
 
