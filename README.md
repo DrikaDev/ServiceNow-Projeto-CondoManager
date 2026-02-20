@@ -1,4 +1,4 @@
-## 🏢 CondoManager - Aplicação de Gestao de Condomínio no ServiceNow
+## 🏢 CondoManager - Aplicação de Gestão de Condomínio no ServiceNow
 
 <p align="center">
 <img width="400" alt="Gemini_Generated_Image_efe9w2efe9w2efe9" src="https://github.com/user-attachments/assets/14a8d6b5-86db-4c0d-a666-70fbbd9a9256" />
