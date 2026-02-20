@@ -29,6 +29,8 @@ Não possui acesso a dados financeiros ou cadastrais privados dos moradores.
 
 <img width="639" height="489" alt="image" src="https://github.com/user-attachments/assets/4cdbb5cc-c8c1-43d0-9b86-878345c29545" />
 
+<img width="922" height="257" alt="image" src="https://github.com/user-attachments/assets/8607ef3d-1a31-4945-8ce3-8b214b12a554" />
+
 ### Por que estas roles são importantes?  
 No ServiceNow, ao criar uma *Scoped Application*, as roles permitem que você utilize ACLs (Access Control Lists) para proteger as tabelas.  
 Por exemplo:  
