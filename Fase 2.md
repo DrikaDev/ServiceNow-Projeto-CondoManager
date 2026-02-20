@@ -3,8 +3,10 @@
 ## Criar Tabelas
 
 ## 🏠 Tabela: Apartment - from scratch
+
 Tabela de cadastro das unidades habitacionais.  
-<img width="713" height="318" alt="image" src="https://github.com/user-attachments/assets/0a526ccf-6d4e-4bd1-b611-ff0cc19e7eaf" />
+
+<img width="716" height="324" alt="image" src="https://github.com/user-attachments/assets/bd0c3bc0-00a7-4801-8ca9-8b5fd3ad75b5" />
 
 Campos:
 - Number (String)
@@ -15,7 +17,11 @@ Campos:
 ---
 
 ## 👤 Tabela: Resident - from scratch
-Tabela para gerenciar as pessoas vinculadas aos apartamentos.
+
+Tabela para gerenciar as pessoas vinculadas aos apartamentos.  
+
+<img width="717" height="321" alt="image" src="https://github.com/user-attachments/assets/402ea8fe-0b72-43c5-a308-e2419e47b77f" />
+
 Campos:
 - Name (String)
 - Apartment (Reference → Apartment)
