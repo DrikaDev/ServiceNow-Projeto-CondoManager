@@ -33,7 +33,11 @@ Campos:
 
 ## 🛠️ Tabela: Maintenance Request - Extendida da Task
 
-Estender a tabela **Task** para reaproveitar funcionalidades padrão.
+Tabela para gerenciar solicitações de pedido de manutenção predial.
+
+<img width="725" height="329" alt="image" src="https://github.com/user-attachments/assets/735b9b2f-f222-4170-a619-b32da4687621" />
+
+Estender a tabela **Task** para reaproveitar funcionalidades padrão.  
 > **Task** é usada para processos que têm um "fazer" (uma tarefa com início, meio e fim), como uma manutenção.  
 > **Apartamentos e Moradores** são dados estáticos (registros de mestre), por isso não precisam das funcionalidades de uma tarefa.  
 
@@ -49,7 +53,11 @@ Campos adicionais:
 ---
 
 ## 🎉 Tabela: Reservation - from scratch
+
 Tabela para o controle de uso das áreas comuns.  
+
+<img width="734" height="338" alt="image" src="https://github.com/user-attachments/assets/0e302c8f-f891-4e1d-8b13-69d59af740c9" />
+
 Campos:
 - Area (Choice: Salão de Festas / Churrasqueira / Quadra)
 - Apartment (Reference → Apartment)
