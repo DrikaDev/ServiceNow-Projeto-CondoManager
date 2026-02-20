@@ -15,7 +15,7 @@ Desenvolver uma aplicação escopada no ServiceNow para gestão de condomínio, 
 
 ## 📌 Cenário Fictício
 
-O Condomínio Residencial **Solar das Palmeiras** precisa de uma solução para:
+O Condomínio Residencial **Vila Constança** precisa de uma solução para:
 
 - Registrar moradores e apartamentos
 - Permitir abertura de chamados (ex: vazamento, elevador com defeito)
