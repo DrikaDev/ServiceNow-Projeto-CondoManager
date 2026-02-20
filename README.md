@@ -127,7 +127,7 @@ Criar Dashboard com:
 
 ---
 
-# 🧠 Conceitos Aplicados
+## 🧠 Conceitos Aplicados
 
 - Aplicação escopada
 - Modelagem relacional
@@ -141,7 +141,7 @@ Criar Dashboard com:
 
 ---
 
-# 🚀 Resultado Esperado
+## 🚀 Resultado Esperado
 
 Uma aplicação funcional que simula um cenário real corporativo, demonstrando:
 
@@ -153,4 +153,11 @@ Uma aplicação funcional que simula um cenário real corporativo, demonstrando:
 
 ---
 
+## Funcionalidades Futuras
+
+- Módulo Financeiro: Implementação da tabela de Billing para emissão e controle de boletos vinculados a cada unidade.
+- Integração Bancária: Uso de IntegrationHub para automação de cobranças e conciliação de pagamentos via API.
+- Automação de Notificações: Configuração de Flows para envio de alertas automáticos sobre vencimentos e comunicados do condomínio.
+
+---
 ✨ Desenvolvido por Adriana G.
