@@ -11,19 +11,19 @@
 
 ### Role 1: Admin do Condomínio
 **Role name:** condo.admin  
-**Description:** Acesso total à aplicação CondoManager.  
+**Description:** Acesso total à aplicação *CondoManager* permitindo criar, ler, editar e excluir qualquer chamado de manutenção para manter a governança total do sistema.  
 **CRUD:** Create, Read, Write, Delete.  
 Pode gerenciar todos os cadastros de apartamentos, moradores, aprovar reservas de áreas comuns e configurar categorias de manutenção.  
 
 ### Role 2: Morador (Resident)
 **Role name:** condo.resident  
 **Description:** Acesso restrito ao portal do morador.  
-**CRUD:** Read.  
+**CRUD:** Creat e Read.  
 Permite realizar reservas de áreas comuns, abrir solicitações de manutenção para sua própria unidade e atualizar seus dados de contato.  
 
 ### Role 3: Manutenção / Zeladoria
 **Role name:** condo.maintenance  
-**Description:** Permissão para visualizar e atualizar o status de solicitações de manutenção (Maintenance Requests).  
+**Description:** Permissão para visualizar e atualizar o status de solicitações de manutenção.  
 **CRUD:** Read e Write.  
 Não possui acesso a dados financeiros ou cadastrais privados dos moradores.
 
