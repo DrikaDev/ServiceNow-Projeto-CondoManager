@@ -1,4 +1,4 @@
-## 🏢 CondoManager - Aplicação de Gestão de Condomínio no ServiceNow
+## 🏢 CondoManager - Aplicação de Gestão de Condomínio no ServiceNow (⚠️PROJETO EM CONSTRUÇÃO!)
 
 <p align="center">
 <img width="400" alt="Gemini_Generated_Image_efe9w2efe9w2efe9" src="https://github.com/user-attachments/assets/14a8d6b5-86db-4c0d-a666-70fbbd9a9256" />
@@ -25,11 +25,9 @@ O Condomínio Residencial **Vila Constança** precisa de uma solução para:
 
 ---
 
-### 🏗️ FASE 1 – [Criação da Aplicação Escopada](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)
-
-### 🗄️ FASE 2 – [Modelagem de Dados](https://github.com/DrikaDev/ServiceNow-Projeto-CondoManager/blob/main/Fase%202.md)
-
-### 🔐 FASE 3 – Segurança (RBAC)
+**FASE 1** – [Criação da Aplicação Escopada](https://github.com/DrikaDev/ServiceNow-Gestao-de-Condominio/blob/main/Fase%201.md)  
+**FASE 2** – [Modelagem de Dados](https://github.com/DrikaDev/ServiceNow-Projeto-CondoManager/blob/main/Fase%202.md)  
+**FASE 3** – Segurança (RBAC)  
 
 ## 3️⃣ Criar Roles
 
