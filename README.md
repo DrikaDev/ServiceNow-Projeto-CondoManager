@@ -1,4 +1,5 @@
-## 🏢 CondoManager - Aplicação de Gestão de Condomínio no ServiceNow (⚠️PROJETO EM CONSTRUÇÃO!)
+## 🏢 CondoManager - Aplicação de Gestão de Condomínio no ServiceNow 
+### ⚠️PROJETO EM CONSTRUÇÃO!
 
 <p align="center">
 <img width="400" alt="Gemini_Generated_Image_efe9w2efe9w2efe9" src="https://github.com/user-attachments/assets/14a8d6b5-86db-4c0d-a666-70fbbd9a9256" />
